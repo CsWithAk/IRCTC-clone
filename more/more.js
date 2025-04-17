@@ -1,4 +1,4 @@
-/*======= For Login at Home page ========*/
+/*======= For back to Home page ========*/
 function back(){
     alert("Are you sure want to back!");
     window.location.href='index.html';
