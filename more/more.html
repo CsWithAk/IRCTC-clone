@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRCTC Next Generation eTicketing System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/jpg" href="src\assets\IRCTC-logo.jpg">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; 
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            width: 100%;
+            max-width: 1200px;
+            overflow: hidden;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(233, 228, 228);
+        }
+        /*========Header Section Start =======*/
+        header{
+            width: 100%;
+            height: 40px;
+            max-width: 1200px;
+            background: linear-gradient(to right, rgb(255, 25, 0), rgb(255, 115, 0),  rgb(255, 145, 2));
+            display: flex;
+            justify-content: space-between;
+            align-items: center;        
+        }
+        .back{
+            margin-left: 15px;
+            color: #fff;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .text{
+            color: #fff;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        /*========Body Section Start =======*/
+        h1 {
+            color: #333;
+        }
+        h2 {
+            color: #555;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            cursor: pointer;
+            background-color: #fff;
+            padding: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+        }
+        li a{
+            padding-left: 30px;
+            position: absolute;
+            align-items: left;
+            text-decoration: none;
+            font-size: 12px;
+            color: #000;
+        }
+        li .p{
+            font-size: 6px;
+            font-weight: bold;
+        }
+        /*========Footer Section Start =======*/
+        footer{
+            height: 10vh;
+            text-align: center;
+            background-color: #fff;
+            color: #000000;
+            position: absolute;
+            bottom: 0; 
+            width: 100%;
+            max-width: 1200px;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+            padding: 15px;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+            background-color: #fff;
+        }
+        .main-footer{
+            box-shadow: inset 0 4px 8px rgba(177, 170, 170, 0.941);
+            background-color: #fff;
+            color: rgb(97, 95, 95);
+        }
+        .main-footer a{
+            display: absolute;
+        /* justify-content: space-around;*/
+            align-items: center;
+            color: rgb(97, 95, 95);
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <span class="back" onclick="back()"><i class="fa-solid fa-angle-left"></i> </span>
+        <span class="text">MORE</span>
+        <span></span>
+    </header>
+    <ul>
+        <li><i class="fa-solid fa-bell"></i><a href="https://www.irctc.co.in/nget/enquiry/alerts">Alert</a><i id="arrow" class="fa-solid fa-angle-right"></i></li>
+        <li><i class="fa-solid fa-heart-pulse"></i><a href="">Download Aroygya Setu</a><i class="fa-solid fa-angle-right"></i></li>
+        <li><i class="fa-solid fa-bell-concierge"></i><a href="https://www.ecatering.irctc.co.in/">Order / Cancel Food In Train</a><i class="fa-solid fa-angle-right"></i></li>
+        <li><i class="fa-solid fa-train-subway"></i><a href="">Vikalp for Counter Ticket</a><i class="fa-solid fa-angle-right"></i></li>
+        <li><i class="fa-solid fa-file-pen"></i><a href="https://www.operations.irctc.co.in/ctcan/SystemTktCanLogin.jsf">Counter Ticket Cancellation/Boarding Point charge</a><i class="fa-solid fa-angle-right"></i></li>
+        <li><i class="fa-regular fa-images"></i><a href="https://www.irctctourism.com/gallery/">Gallary</a><i class="fa-solid fa-angle-right"></i></li>
+        <li><i class="fa-solid fa-users"></i><a href="">About Us</a><i class="fa-solid fa-angle-right"></i></li>
+        <li><i class="fa-solid fa-phone"></i><a href="">Contact us</a><i class="fa-solid fa-angle-right"></i></li>
+        <li><i class="fa-solid fa-file-circle-question"></i><a href="https://equery.irctc.co.in/irctc_equery/">Help & Support</a><i class="fa-solid fa-angle-right"></i></li>
+        <li><i class="fa-solid fa-star"></i><a href="">Rate Us</a><i class="fa-solid fa-angle-right"></i></li>
+        <li><i class="fa-solid fa-fingerprint"></i><a href="">Biometric Authentication</a><i class="fa-solid fa-toggle-on"></i></li>
+        <li><i class="fa-solid fa-book"></i><a href="">User Guide</a><i class="fa-solid fa-angle-right"></i></li>
+        <li><i class="fa-solid fa-globe"></i><a href="">Language</a><i class="fa-solid fa-angle-right"></i></li>
+        <li><p>For Medical Emergency/First Aid, contact Ticket Checking Staff/Guard or Dial 139</p></li>
+    </ul>
+</body>
+<footer class="main-footer">
+    <div class="footInfo">
+        <div class="foot">
+            <a href="home.html"><i class="fa-solid fa-home"></i></a>
+        </div>
+        <h6>Home</h6>
+    </div>
+    <div class="footInfo">
+        <div class="cat-icon">
+            <a href="account\account.html"><i class="fa-solid fa-user"></i></a>
+        </div>
+        <h6>Account</h6>
+    </div>
+    <div class="footInfo">
+        <div class="cat-icon">
+            <a href="https://www.amazon.in/"><i style="color: darkred;" class="fa-solid fa-cart-plus"></i></a>
+        </div>
+        <h6>Shop</h6>
+    </div>
+    <div class="footInfo">
+        <div class="cat-icon">
+            <a href="login\login.html"><i class="fa-solid fa-list-ul"></i></a>
+        </div>
+        <h6>Transactions</h6>
+    </div>
+    <div class="footInfo">
+        <div class="cat-icon">
+            <a href="more\more.html"><i style="color: red;" class="fa-solid fa-ellipsis"></i></a>
+        </div>
+        <h6 style="color: red;">More</h6>
+    </div>
+</footer>
+    <script src="more\more.js"></script>
+</html> 
