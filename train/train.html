@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRCTC Next Generation eTicketing System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="train\train.css">
+    <link rel="icon" type="image/jpg" href="src\assets\IRCTC-logo.jpg">
+</head>
+<body>
+    <header>
+        <span class="back" onclick="back()"><i class="fa-solid fa-angle-left"></i> </span>
+        <span class="text">TRAIN</span>
+        <span class="login" onclick="login()">Login</span>
+    </header>
+
+    <!-- Service line-01 -->
+    
+    <section class="main">
+        <div class="imgInfo">
+            <div class="cat-icon">
+                <a href="account\account.html"><i style="color: rgb(100, 0, 177);" class="fa-solid fa-train-subway"></i></a>
+            </div>
+            <h6 for="name">Book<br><span>Ticket</span></h6>
+        </div>
+        <div class="imgInfo">
+            <div class="cat-icon">
+                <a href="login\login.html"><i style="color: rgb(43, 255, 0);" class="fa-solid fa-ticket"></i></a>
+            </div>
+            <h6 for="name">My<br><span>Booking</span></h6>
+        </div>
+        <div class="imgInfo">
+            <div class="cat-icon">
+                <a href="login\login.html"><i style="color: rgb(5, 155, 255);"  class="fa-solid fa-file-circle-question"></i></a>
+            </div>
+            <h6 for="name">PNR <br>Enquiry</h6>
+        </div>
+        <div class="imgInfo">
+            <div class="cat-icon">
+                <a href="login\login.html"><i style="color: rgb(4, 4, 161);" class="fa-solid fa-money-bill-transfer"></i></a>
+            </div>
+            <h6 for="name">Last<br><span>Transation</span></h6>
+        </div>
+        <div class="imgInfo">
+            <div class="cat-icon">
+                <a href="login\login.html"><i style="color: red;" class="fa-solid fa-route"></i></a>
+            </div>
+            <h6 for="name">Upcomming<br>Journey</h6>
+        </div>
+        <div class="imgInfo">
+            <div class="cat-icon">
+                <a href="login\login.html"><i style="color: rgb(5, 202, 64);" class="fa-solid fa-file-pen"></i></a>
+            </div>
+            <h6 for="name">Cancel<br>Ticket</h6>
+        </div>
+        <div class="imgInfo">
+            <div class="cat-icon">
+                <a href="login\login.html"><i style="color: red;" class="fa-solid fa-triangle-exclamation"></i></a>
+            </div>
+            <h6 for="name">File TDR <br><span style="color: white;">a</span></h6>
+        </div>
+        <div class="imgInfo">
+            <div class="cat-icon">
+                <a href="login\login.html"><i style="color: rgb(247, 0, 255);" class="fa-solid fa-circle-dollar-to-slot"></i></a>
+            </div>
+            <h6 for="name">Refund <br>History</h6>
+        </div>
+        <div class="imgInfo">
+            <div class="cat-icon">
+                <a href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:15225101-c8fe-4262-8dfd-ec15dca59b46"><i class="fa-solid fa-comments-dollar"></i></a>
+            </div>
+            <h6 for="name">FAQ <br><span style="color: white;">a</span></h6>
+        </div>
+        <div class="imgInfo">
+            <div class="cat-icon">
+                <a href="login\login.html"><i style="color: aqua;" class="fa-solid fa-wallet"></i></a>
+            </div>
+            <h6 for="name">IRCTC<br>E-Wallet</h6>
+        </div>
+        <div class="imgInfo">
+            <div class="cat-icon">
+                <a href="https://www.irctc.co.in/online-charts/"><i style="color: rgb(245, 186, 38);" class="fa-solid fa-file"></i></a>
+            </div>
+            <h6 for="name">Chart<br>Vacancy</h6>
+        </div>
+        <div class="imgInfo">
+            <div class="cat-icon">
+                <a href="https://www.hotels.irctc.co.in/hotels"><i class="fa-solid fa-train"></i><i class="fa-solid fa-route"></i></a>
+            </div>
+            <h6 for="name">Train<br>Schedule</h6>
+        </div>
+        <div class="imgInfo">
+            <div class="cat-icon">
+                <a href="https://enquiry.indianrail.gov.in/mntes/"><i id="track" class="fa-solid fa-location-dot"></i><i class="fa-solid fa-route"></i></a>
+            </div>
+            <h6 for="name">Track Your<br>Train</h6>
+        </div>
+        <div class="imgInfo">
+            <div class="cat-icon">
+                <a href="https://askdisha.irctc.co.in/eticket/#app" style="color: darkblue;"><i class="fa-solid fa-person"></i><i class="fa-solid fa-person-dress"></i></a>
+            </div>
+            <h6 for="name">Ask Disha<br>2.0</h6>
+        </div>
+        <div class="imgInfo">
+            <div class="cat-icon">
+                <a onclick="metro()" href=""><i class="fa-solid fa-train-tram"></i></a>
+            </div>
+            <h6 for="name">Delhi Mertro<br><span style="color: white;">a</span></h6>
+        </div>
+    </section>
+    
+<!-- Advertisement section -01 -->
+    <section class="ad-1">
+        <img src="src\assets\Ad.jpg" alt="ad"> 
+    </section>
+
+<!-- Advertisement section -02 -->
+   <section class="ad-2">
+        <div class="title">INFORMATION</div>
+        <div class="info">
+            <a href="https://www.irctc.co.in/nget/enquiry/alerts">Please verify train schdules on indianrail.gov.in,<br>NTES or 139 before traveling.</a>
+        </div> 
+    </section>
+<!-- Advertisement section -03 -->
+    <section class="ad-3">
+        <marquee  class="ad-3a" behavior="scroll" direction="up" scrollamount="5">
+            <img src="src\assets\recharge.png" alt="Ad">
+            <img src="src\assets\IRCTC-logo.jpg" alt="Ad">
+        </marquee>
+    </section>
+   
+</body>
+
+
+<footer class="main-footer">
+    <div class="footInfo">
+        <div class="foot">
+            <a href=""><i style="color: red;" class="fa-solid fa-home"></i></a>
+        </div>
+        <h6 style="color: red;">Home</h6>
+    </div>
+    <div class="footInfo">
+        <div class="cat-icon">
+            <a href="account\account.html"><i class="fa-solid fa-user"></i></a>
+        </div>
+        <h6>Account</h6>
+    </div>
+    <div class="footInfo">
+        <div class="cat-icon">
+            <a href="https://www.amazon.in/"><i style="color: red;" class="fa-solid fa-cart-plus"></i></a>
+        </div>
+        <h6>Shop</h6>
+    </div>
+    <div class="footInfo">
+        <div class="cat-icon">
+            <a href="login\login.html"><i class="fa-solid fa-list-ul"></i></a>
+        </div>
+        <h6>Transactions</h6>
+    </div>
+    <div class="footInfo">
+        <div class="cat-icon">
+            <a href="more\more.html"><i class="fa-solid fa-ellipsis"></i></a>
+        </div>
+        <h6>More</h6>
+    </div>
+</footer>
+<script src="train\train.js"></script>
+</html>
